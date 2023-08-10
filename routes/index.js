@@ -1,12 +1,9 @@
+const auth_route = require("./auth")
+const food_data_route = require("./food_data");
+const users_route = require("./users");
 
-const express = require("express")
-const route = express.Router();
-
-const data = require("../data/index.json")
-
-route.get("/", (req, res) => {
-    console.log(req.query)
-    res.send({ data })
-})
-
-module.exports = route
+module.exports = {
+    auth_route,
+    food_data_route,
+    users_route,
+}

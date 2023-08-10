@@ -1,0 +1,35 @@
+[
+    {
+        "id": "uuid.v4()-1",
+        "name": "Rash",
+        "email": "rash@gmail.com",
+        "img": "https://food-app/author/rash.png",
+        "phone": "+237670118208",
+        "media": {
+            "name": "Twitter",
+            "link": "https://twitter/orashus"
+        }
+    },
+    {
+        "id": "uuid.v4()-2",
+        "name": "Ettie",
+        "email": "ettie@gmail.com",
+        "img": "https://food-app/author/ettie.png",
+        "phone": "+237670118208",
+        "media": {
+            "name": "Twitter",
+            "link": "https://twitter/orock"
+        }
+    },
+    {
+        "id": "uuid.v4()-3",
+        "name": "Claude",
+        "email": "claude@gmail.com",
+        "img": "https://food-app/author/claude.png",
+        "phone": "+237670118208",
+        "media": {
+            "name": "Twitter",
+            "link": "https://twitter/jaro"
+        }
+    }
+]

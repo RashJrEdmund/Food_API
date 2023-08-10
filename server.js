@@ -1,16 +1,20 @@
 const PORT = 4000;
 
 const express = require("express");
-const indexRouter = require("./routes/index");
+const { food_data_route, users_route, auth_route } = require("./routes")
 
 //configurations
 const app = express();
 require("dotenv").config();
 
-app.get("/", (req, res) => {
+
+app.get("/", (_, res) => {
     res.status(200).sendFile(__dirname + "/public/index.html")
 })
 
-app.use("/food_data", indexRouter);
+
+app.use("/auth", auth_route);
+app.use("/food_data", food_data_route);
+app.use("/users", users_route);
 
 app.listen(PORT, () => console.log(`listenning on port ${PORT}`));
