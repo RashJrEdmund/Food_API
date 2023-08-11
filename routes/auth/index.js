@@ -22,7 +22,16 @@ router.post('/register', (req, res) => {
 })
 
 router.post('/login', (req, res) => {
-    res.send("login in")
+    try {
+        console.log(req.body)
+
+        // if (!req.body.email || !req.body.password) return res.status(400).send({ message: "Missing user info" })
+
+        res.send("login in")
+    } catch (err) {
+        console.log("an error occured", err)
+        res.status(500).send("and error occured")
+    }
 })
 
 module.exports = router
