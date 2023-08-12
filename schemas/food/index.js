@@ -24,6 +24,6 @@ const foodSchema = new Schema(
     { versionKey: false }
 );
 
-const FoodModel = mongoose.model("foods", foodSchema);
+const FoodSchema = mongoose.model("foods", foodSchema);
 
-module.exports = FoodModel;
+module.exports = FoodSchema;
