@@ -15,7 +15,7 @@ router.get("/", (_, __) => __.send(`
             <p>by: <span style="font-weight: 600;">Rash</span></p>
         </body>
     </html>
-`))
+`));
 
 router.post('/register', (req, res) => {
     res.send("registering users... done!")
@@ -24,7 +24,7 @@ router.post('/register', (req, res) => {
 router.post("/login", (req, res) => {
     try {
         console.clear()
-        console.log("body:", req.headers)
+        console.log("body:", req.body)
 
         // if (!req.body.email || !req.body.password) return res.status(400).send({ message: "Missing user info" })
 
