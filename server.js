@@ -7,6 +7,9 @@ const { food_data_route, users_route, auth_route } = require("./routes")
 const app = express();
 require("dotenv").config();
 
+// major middle wares
+app.use(express.json()) // used like bodyparser.json() from "body-parser". it ensures the req.body data is not lost
+
 
 app.get("/", (_, res) => {
     res.status(200).sendFile(__dirname + "/public/index.html")

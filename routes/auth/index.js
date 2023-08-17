@@ -24,7 +24,7 @@ router.post('/register', (req, res) => {
 router.post("/login", (req, res) => {
     try {
         console.clear()
-        console.log("body:", req.body);
+        // console.log("body:", req.body);
 
         req.body && console.log("if true part") || console.log("else part")
 
