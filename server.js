@@ -9,10 +9,10 @@ require("dotenv").config();
 
 // major middle wares
 app.use(express.json()) // used like bodyparser.json() from "body-parser". it ensures the req.body data is not lost
-
+app.use(express.static(__dirname + "/views/"))
 
 app.get("/", (_, res) => {
-    res.status(200).sendFile(__dirname + "/public/index.html")
+    res.status(200).sendFile("index.html")
 })
 
 app.use("/auth", auth_route);
