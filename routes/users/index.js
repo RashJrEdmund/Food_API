@@ -1,10 +1,10 @@
-const express = require("express")
-const router = express.Router();
+const router = require("express").Router()
 
-const users = require("../../data/users")
+const UserController = require("../../modules/users/user.controller");
+const userController = new UserController();
 
-router.get("/", (_, res) => {
-    res.status(200).send({ message: "sent all users", users })
-})
+router.get('/', userController.getAllUsers);
+router.get('/:id', userController.getOneUser.bind(userController));
+router.post('/', userController.createOneUser.bind(userController));
 
 module.exports = router

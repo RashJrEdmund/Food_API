@@ -8,7 +8,8 @@
         "media": {
             "name": "Twitter",
             "link": "https://twitter/orashus"
-        }
+        },
+        "is_admin": false
     },
     {
         "id": "uuid.v4()-2",
@@ -19,7 +20,8 @@
         "media": {
             "name": "Twitter",
             "link": "https://twitter/orock"
-        }
+        },
+        "is_admin": true
     },
     {
         "id": "uuid.v4()-3",
@@ -30,6 +32,7 @@
         "media": {
             "name": "Twitter",
             "link": "https://twitter/jaro"
-        }
+        },
+        "is_admin": false
     }
 ]

@@ -18,7 +18,7 @@
         "fav": false,
         "id": 0,
         "author": {
-            "name": "Rash",
+            "username": "Rash",
             "img": "https://food-app/author/rash.png",
             "media": {
                 "name": "Twitter",
@@ -46,7 +46,7 @@
         "fav": false,
         "id": 1,
         "author": {
-            "name": "Rash",
+            "username": "Rash",
             "img": "https://food-app/author/rash.png",
             "media": {
                 "name": "Twitter",
@@ -70,7 +70,7 @@
         "fav": false,
         "id": 2,
         "author": {
-            "name": "Rash",
+            "username": "Rash",
             "img": "https://food-app/author/rash.png",
             "media": {
                 "name": "Twitter",
@@ -95,7 +95,7 @@
         "fav": false,
         "id": 3,
         "author": {
-            "name": "Rash",
+            "username": "Rash",
             "img": "https://food-app/author/rash.png",
             "media": {
                 "name": "Twitter",
@@ -119,7 +119,7 @@
         "fav": false,
         "id": 4,
         "author": {
-            "name": "Rash",
+            "username": "Rash",
             "img": "https://food-app/author/rash.png",
             "media": {
                 "name": "Twitter",
@@ -142,7 +142,7 @@
         "fav": false,
         "id": 5,
         "author": {
-            "name": "Rash",
+            "username": "Rash",
             "img": "https://food-app/author/rash.png",
             "media": {
                 "name": "Twitter",
@@ -166,7 +166,7 @@
         "fav": false,
         "id": 6,
         "author": {
-            "name": "Rash",
+            "username": "Rash",
             "img": "https://food-app/author/rash.png",
             "media": {
                 "name": "Twitter",
@@ -192,7 +192,7 @@
         "fav": false,
         "id": 7,
         "author": {
-            "name": "Rash",
+            "username": "Rash",
             "img": "https://food-app/author/rash.png",
             "media": {
                 "name": "Twitter",
@@ -219,7 +219,7 @@
         "fav": false,
         "id": 8,
         "author": {
-            "name": "Rash",
+            "username": "Rash",
             "img": "https://food-app/author/rash.png",
             "media": {
                 "name": "Twitter",
@@ -245,7 +245,7 @@
         "fav": false,
         "id": 9,
         "author": {
-            "name": "Rash",
+            "username": "Rash",
             "img": "https://food-app/author/rash.png",
             "media": {
                 "name": "Twitter",
@@ -271,7 +271,7 @@
         "fav": false,
         "id": 10,
         "author": {
-            "name": "Rash",
+            "username": "Rash",
             "img": "https://food-app/author/rash.png",
             "media": {
                 "name": "Twitter",
@@ -297,7 +297,7 @@
         "fav": false,
         "id": 11,
         "author": {
-            "name": "Rash",
+            "username": "Rash",
             "img": "https://food-app/author/rash.png",
             "media": {
                 "name": "Twitter",
@@ -323,7 +323,7 @@
         "fav": false,
         "id": 12,
         "author": {
-            "name": "Rash",
+            "username": "Rash",
             "img": "https://food-app/author/rash.png",
             "media": {
                 "name": "Twitter",
@@ -350,7 +350,7 @@
         "fav": false,
         "id": 13,
         "author": {
-            "name": "Rash",
+            "username": "Rash",
             "img": "https://food-app/author/rash.png",
             "media": {
                 "name": "Twitter",
@@ -376,7 +376,7 @@
         "fav": false,
         "id": 14,
         "author": {
-            "name": "Rash",
+            "username": "Rash",
             "img": "https://food-app/author/rash.png",
             "media": {
                 "name": "Twitter",
@@ -402,7 +402,7 @@
         "fav": false,
         "id": 15,
         "author": {
-            "name": "Rash",
+            "username": "Rash",
             "img": "https://food-app/author/rash.png",
             "media": {
                 "name": "Twitter",
@@ -429,7 +429,7 @@
         "fav": false,
         "id": 16,
         "author": {
-            "name": "Rash",
+            "username": "Rash",
             "img": "https://food-app/author/rash.png",
             "media": {
                 "name": "Twitter",

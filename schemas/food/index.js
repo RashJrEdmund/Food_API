@@ -13,7 +13,7 @@ const foodSchema = new Schema(
         fav: Boolean,
         author: {
             id: { type: String, required: true },
-            name: { type: String, required: true },
+            username: { type: String, required: true },
             img: String,
             media: {
                 name: String,
