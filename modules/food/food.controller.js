@@ -1,7 +1,5 @@
 const FoodService = require("./food.service.js");
 
-console.log({ FoodService })
-
 class FoodController {
   async getAllFood(_, res) {
     try {

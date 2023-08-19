@@ -1,14 +1,12 @@
 const { foodData } = require("../../data");
 const { FoodSchema } = require("../../schemas");
-const { v4: uuid } = require("uuid")
 
 console.log(uuid())
 
 class FoodService {
     static getAllFood = () => {
         // FoodSchema.
-
-        return [{ name: "rice" }]
+        return foodData
     }
 
     static getOneFood = (id) => {
@@ -18,12 +16,18 @@ class FoodService {
     static createOneFood = async (reqBody) => {
         // FoodSchema
 
-        const foodInsert = foodData.map(food => ({ ...food, id: uuid() }))
+        try {
+            // const foodInsert = foodData.map(food => ({ ...food, id: uuid(), author: { ...food.author, id: "d240d395-d5f1-4fb8-9ae2-c630b178d6cd" } }))
 
-        const response = FoodSchema.insertMany(...foodInsert)
+            console.clear()
+            console.log(foodData.slice(-1), foodData.slice(-1)[0].author)
+            const response = await FoodSchema.insertMany([...foodData])
 
-        console.clear();
-        console.log("response \n \n", response);
+            console.clear();
+            console.log("response \n \n", response);
+        } catch (err) {
+            console.log({ FoodSchema, err })
+        }
 
         // const food = {
         //     id: reqBody.id, // also plan to use uuid.v4() from the fron_end
@@ -54,6 +58,6 @@ class FoodService {
     }
 }
 
-// FoodService.createOneFood()
+FoodService.createOneFood()
 
 module.exports = FoodService
