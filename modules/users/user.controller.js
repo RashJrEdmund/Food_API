@@ -9,15 +9,6 @@ class UserController {
         res.status(200).send(allUsers);
     }
 
-    async getOneUser(req, res) {
-        console.log(req.params.id)
-        const user = await UserService.getOneUser(req.params.id);
-
-        if (!user) return res.sendStatus(404);
-
-        res.status(200).send(user);
-    }
-
     async createOneUser(req, res) {
         const { username, password, email } = req.body;
 
@@ -29,6 +20,23 @@ class UserController {
             .registerUser(req.body)
             .then(({ statusCode, result }) => res.status(statusCode).send(result))
             .catch((err) => res.status(500).send(err.toLocaleString()));
+    }
+
+    async getOneUser(req, res) {
+        console.log(req.params.id)
+        const user = await UserService.getOneUser(req.params.id);
+
+        if (!user) return res.sendStatus(404);
+
+        res.status(200).send(user);
+    }
+
+    async updateOne(req, res) {
+        //
+    }
+
+    async deleteOne(req, res) {
+        //
     }
 
     // patchOneUser(req, res) {

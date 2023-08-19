@@ -1,12 +1,18 @@
-const { FoodService } = require("./food.service");
+const FoodService = require("./food.service.js");
+
+console.log({ FoodService })
 
 class FoodController {
   async getAllFood(_, res) {
-    const all_food = await FoodService.getAllFood();
+    try {
+      const all_food = await FoodService.getAllFood();
 
-    if (all_food.length <= 0) return res.sendStatus(404);
+      if (all_food.length <= 0) return res.sendStatus(404);
 
-    return res.status(200).send(all_food)
+      return res.status(200).send(all_food);
+    } catch (err) {
+      res.status(401).send(err.toLocaleString())
+    }
   }
 
   async getOneFood(req, res) {
@@ -36,13 +42,13 @@ class FoodController {
       .catch((err) => res.status(500).send(err.toLocaleString()));
   }
 
-  updateOneFood(req, res) {
+  async updateOneFood(req, res) {
     FoodService.updateFood(req.body, +req.params.id)
       .then((food_update) => res.status(202).send(food_update))
       .catch((err) => res.status(401).send(err.toLocaleString()));
   }
 
-  deleteFood(req, res) {
+  async deleteFood(req, res) {
     FoodService.deleteFood(req.params.id)
       .then((statusCode) => res.sendStatus(statusCode))
       .catch((err) => res.status(500).send(err.toLocaleString()));

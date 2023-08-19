@@ -10,5 +10,4 @@ mongoose
 
 console.log(mongoose.connection.readyState)
 
-
 module.exports = mongoose
