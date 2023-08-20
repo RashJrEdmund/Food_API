@@ -1,6 +1,6 @@
 [
     {
-        "id": "uuid.v4()-1",
+        "_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
         "name": "Rash",
         "email": "rash@gmail.com",
         "img": "https://food-app/author/rash.png",
@@ -12,7 +12,7 @@
         "is_admin": false
     },
     {
-        "id": "uuid.v4()-2",
+        "_id": "1eb06cd3-2ebd-4bf1-b162-e58d929ea720",
         "name": "Ettie",
         "email": "ettie@gmail.com",
         "img": "https://food-app/author/ettie.png",
@@ -24,7 +24,7 @@
         "is_admin": true
     },
     {
-        "id": "uuid.v4()-3",
+        "_id": "9a19a143-6fd8-492b-8630-d1d7a848aaba",
         "name": "Claude",
         "email": "claude@gmail.com",
         "img": "https://food-app/author/claude.png",

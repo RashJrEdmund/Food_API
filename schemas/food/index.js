@@ -1,10 +1,10 @@
-const mongoose = require("mongoose");
+const mongoose = require("../../db");
 
 const Schema = mongoose.Schema;
 
 const foodSchema = new Schema(
     {
-        id: { type: String, required: true }, // also plan to use uuid.v4() from the fron_end
+        _id: { type: String, required: true }, // also plan to use uuid.v4() from the front_end and overwrite the _id property mongo
         name: { type: String, required: true },
         img: { type: [String] },
         imgIndx: { type: Number || String },

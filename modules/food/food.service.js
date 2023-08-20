@@ -1,8 +1,6 @@
 const { foodData } = require("../../data");
 const { FoodSchema } = require("../../schemas");
 
-console.log(uuid())
-
 class FoodService {
     static getAllFood = () => {
         // FoodSchema.
@@ -19,9 +17,8 @@ class FoodService {
         try {
             // const foodInsert = foodData.map(food => ({ ...food, id: uuid(), author: { ...food.author, id: "d240d395-d5f1-4fb8-9ae2-c630b178d6cd" } }))
 
-            console.clear()
-            console.log(foodData.slice(-1), foodData.slice(-1)[0].author)
             const response = await FoodSchema.insertMany([...foodData])
+            // const response = await FoodSchema.create(foodData[0])
 
             console.clear();
             console.log("response \n \n", response);
@@ -58,6 +55,6 @@ class FoodService {
     }
 }
 
-FoodService.createOneFood()
+// FoodService.createOneFood()
 
 module.exports = FoodService

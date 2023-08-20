@@ -1,10 +1,10 @@
-const mongoose = require("mongoose");
+const mongoose = require("../../db");
 
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema(
     {
-        id: { type: String, required: true }, // plan to use uuid.v4() from the front_end
+        _id: { type: String, required: true }, // plan to use uuid.v4() from the front_end and overwrite the _id property mongo
         username: { type: String, required: true },
         email: { type: String, required: true },
         password: { type: String, required: true },
