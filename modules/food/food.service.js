@@ -23,7 +23,7 @@ class FoodService {
             console.clear();
             console.log("response \n \n", response);
         } catch (err) {
-            console.log({ FoodSchema, err })
+            throw new Error(err.message)
         }
 
         // const food = {

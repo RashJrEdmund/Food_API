@@ -15,6 +15,9 @@ const userSchema = new Schema(
             link: String,
         },
         id_admin: Boolean
+    },
+    {
+        timestamps: true,
     }
 );
 

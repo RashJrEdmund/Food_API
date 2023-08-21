@@ -1,4 +1,4 @@
-const mongoose = require("../../db");
+const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
@@ -21,7 +21,10 @@ const foodSchema = new Schema(
             }
         }
     },
-    { versionKey: false }
+    {
+        versionKey: false,
+        timestamps: true,
+    }
 );
 
 const FoodSchema = mongoose.model("foods", foodSchema);
