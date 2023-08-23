@@ -1,16 +1,15 @@
 const { FoodSchema } = require("../../schemas");
-const { foodData } = require("../../data")
+// const { foodData } = require("../../data")
 
 class FoodRepo {
     static getAllFood = () => FoodSchema.find({});
 
     static getOneFood = (_id) => FoodSchema.findById({ _id });
 
-    static createMany = async (foodData) => {
-
-        const res = await FoodSchema.insertMany([...foodData]);
-        console.log(res)
-    }
+    // static createMany = async (foodData) => { // this will fill the data base with food data
+    //     const res = await FoodSchema.insertMany([...foodData]);
+    //     console.log(res)
+    // }
 
     static getAllByuser = (author_id) => FoodSchema.find({ author_id });
 

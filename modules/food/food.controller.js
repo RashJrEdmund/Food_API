@@ -45,11 +45,11 @@ class FoodController {
       img, // an array string
       recipe, // an array string
       description,
-      author_id
+      author_id,
     } = req.body
 
     if (!(_id && name && img.length >= 1 && recipe.length >= 1 && description && author_id)) {
-      return res.status(406).send({ message: "Missing Food Info" });
+      return res.status(406).send({ message: "Missing Food Info", body: req.body });
     }
 
     FoodService.createOneFood(req.body)
@@ -67,7 +67,7 @@ class FoodController {
 
   deleteFood(req, res) {
     FoodService.deleteFood(req.params.id)
-      .then((resObj) => res.satus(200).send(resObj))
+      .then(({ statusCode, message }) => res.status(statusCode).send(message))
       .catch((err) => res.status(500).send(err.toLocaleString()));
   }
 }

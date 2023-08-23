@@ -11,7 +11,7 @@ const foodSchema = new Schema(
         recipe: { type: [String], required: true },
         description: String,
         fav: { type: Boolean, default: false },
-        author_id: { type: String, required: true }
+        author_id: { type: String, required: true },
     },
     {
         versionKey: false,

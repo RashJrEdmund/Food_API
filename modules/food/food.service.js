@@ -17,7 +17,8 @@ class FoodService {
                 recipe: reqBody.recipe, // an array of steps
                 description: reqBody.description,
                 fav: reqBody.fav,
-                author_id: reqBody.author_id
+                author_id: reqBody.author_id,
+                author_name: reqBody.author_name
             }
 
             const response = await FoodRepo.createOneFood(food);
@@ -46,13 +47,13 @@ class FoodService {
     static deleteFood = async (id) => {
         const food = await FoodRepo.getOneFood(id);
 
-        if (!food || !food._id) throw new Error(`ID: ${id} NOT FOUND`);
+        if (!food || !food._id) return { statusCode: 404, message: `ID: ${id} NOT_FOUND` }
 
-        const res = await FoodRepo
+        const res = await FoodRepo.deleteFood(id)
 
-        return FoodRepo.deleteFood(id);
+        console.log(res)
 
-        // return { message: `SUCCESSFULLY DELETED FOOD: ${id}`, res }
+        return { statusCode: 200, message: `SUCCESSFULLY DELETED ${food.name}, ID: ${id}` }
     }
 }
 
