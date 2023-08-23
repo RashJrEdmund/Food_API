@@ -1,13 +1,10 @@
-const PORT = 5000;
-
-const { food_data_route, users_route, auth_route } = require("./routes")
+const { food_data_route, users_route, auth_route } = require("./routes");
 
 //configurations
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const dot_env = require("dotenv");
-// dot_env.config();
+const { PORT } = require("./services/constants");
 
 // major middle wares
 app.use(express.json()) // used like bodyparser.json() from "body-parser". it ensures the req.body data is not lost

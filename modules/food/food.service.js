@@ -1,60 +1,59 @@
-const { foodData } = require("../../data");
-const { FoodSchema } = require("../../schemas");
+const FoodRepo = require("./food.repo");
 
 class FoodService {
-    static getAllFood = () => {
-        // FoodSchema.
-        return foodData
-    }
+    static getAllFood = () => FoodRepo.getAllFood();
 
-    static getOneFood = (id) => {
-        //
-    }
+    static getOneFood = (_id) => FoodRepo.getOneFood(_id);
+
+    static getAllByuser = (author_id) => FoodRepo.getAllByuser(author_id);
 
     static createOneFood = async (reqBody) => {
-        // FoodSchema
-
         try {
-            // const foodInsert = foodData.map(food => ({ ...food, id: uuid(), author: { ...food.author, id: "d240d395-d5f1-4fb8-9ae2-c630b178d6cd" } }))
+            const food = {
+                _id: reqBody._id || reqBody.id, // also plan to use uuid.v4() from the fron_end
+                name: reqBody.name,
+                img: reqBody.img, // an array of image links
+                imgIndx: 0,
+                recipe: reqBody.recipe, // an array of steps
+                description: reqBody.description,
+                fav: reqBody.fav,
+                author_id: reqBody.author_id
+            }
 
-            const response = await FoodSchema.insertMany([...foodData])
-            // const response = await FoodSchema.create(foodData[0])
+            const response = await FoodRepo.createOneFood(food);
 
-            console.clear();
-            console.log("response \n \n", response);
+            return { statusCode: 200, result: response };
         } catch (err) {
             throw new Error(err.message)
         }
-
-        // const food = {
-        //     id: reqBody.id, // also plan to use uuid.v4() from the fron_end
-        //     name: reqBody.name,
-        //     img: reqBody.img,
-        //     imgIndx: 0,
-        //     recipe: reqBody.recipe,
-        //     description: reqBody.description,
-        //     fav: reqBody.fav ?? false,
-        //     author: {
-        //         id: reqBody.author.id,
-        //         username: reqBody.author.username,
-        //         img: reqBody.author.img,
-        //         media: {
-        //             name: reqBody.author.media.name,
-        //             link: reqBody.author.media.link
-        //         }
-        //     }
-        // }
     }
 
-    static updateFood = (update, id) => {
-        //
+    static updateFood = (_id, reqBody) => {
+        try {
+            const update = {}
+            if (reqBody.name) update.name = reqBody.name;
+            if (reqBody.img) update.img = reqBody.img;
+            if (reqBody.recipe) update.recipe = reqBody.recipe;
+            if (reqBody.description) update.description = reqBody.description;
+            if (reqBody.fav !== undefined) update.fav = reqBody.fav; // since reqBody.fav could be fasle
+
+            return FoodRepo.updateFood(_id, update);
+        } catch {
+            throw new Error("COULD NOT UPDATE FOOD");
+        }
     }
 
-    static deleteFood = (id) => {
-        //
+    static deleteFood = async (id) => {
+        const food = await FoodRepo.getOneFood(id);
+
+        if (!food || !food._id) throw new Error(`ID: ${id} NOT FOUND`);
+
+        const res = await FoodRepo
+
+        return FoodRepo.deleteFood(id);
+
+        // return { message: `SUCCESSFULLY DELETED FOOD: ${id}`, res }
     }
 }
-
-// FoodService.createOneFood()
 
 module.exports = FoodService

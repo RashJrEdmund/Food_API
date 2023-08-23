@@ -1,5 +1,3 @@
-const { userData } = require("../../data");
-
 class UserService {
     static getAllUsers = () => userData;
 
@@ -13,6 +11,7 @@ class UserService {
             email: reqBody.email,
             img: reqBody.img,
             phone: reqBody.phone,
+            password: reqBody.password,
             is_admin: reqBody.is_admin,
             media: {
                 name: reqBody.media.name,
@@ -20,11 +19,13 @@ class UserService {
             }
         }
 
-        const result = [...userData, newUser];
-        const statusCode = 200;
+        // const result = [...userData, newUser];
+        // const statusCode = 200;
 
-        return { statusCode, result }
+        // return { statusCode, result }
     }
 }
+
+// UserService.registerUser()
 
 module.exports = UserService

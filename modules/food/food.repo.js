@@ -1,20 +1,28 @@
-const { foodData } = require("../../data");
 const { FoodSchema } = require("../../schemas");
+const { foodData } = require("../../data")
 
 class FoodRepo {
-    static getAllFood = () => FoodSchema.find({})
+    static getAllFood = () => FoodSchema.find({});
 
-    static getOneFood = (_id) => FoodSchema.find({}).where({ _id })
+    static getOneFood = (_id) => FoodSchema.findById({ _id });
 
-    static createOneFood = (food) => FoodSchema.create(food)
+    static createMany = async (foodData) => {
 
-    static updateFood = (update, id) => FoodSchema.updateOne();
-
-    static deleteFood = (id) => {
-        //
+        const res = await FoodSchema.insertMany([...foodData]);
+        console.log(res)
     }
+
+    static getAllByuser = (author_id) => FoodSchema.find({ author_id });
+
+    static createOneFood = (food) => FoodSchema.create({ ...food });
+
+    static updateFood = (_id, update) =>
+        FoodSchema.updateOne({ _id }, { ...update })
+            .then(() => FoodRepo.getOneFood(_id));
+
+    static deleteFood = (_id) => FoodSchema.deleteOne({ _id });
 }
 
-// FoodRepo.createOneFood()
+// FoodRepo.createMany(foodData)
 
-module.exports = FoodRepo
+module.exports = FoodRepo;

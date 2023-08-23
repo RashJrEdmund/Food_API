@@ -7,8 +7,6 @@ mongoose
     useUniFiedTopology: true,
   })
   .then(() => console.log("mongoose connected"))
-  .catch((error) => console.log("\nerror:", error.message))
-
-console.log("data", mongoose.connection.readyState)
+  .catch((error) => console.log("\nerror:", error.message));
 
 module.exports = mongoose
