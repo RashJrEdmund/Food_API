@@ -4,7 +4,7 @@ const { FoodSchema } = require("../../schemas");
 class FoodRepo {
     static getAllFood = () => FoodSchema.find({});
 
-    static getOneFood = (_id) => FoodSchema.findById({ _id });
+    static getOneFood = (_id) => FoodSchema.findById(_id);
 
     // static createMany = async (foodData) => { // this will fill the data base with food data
     //     const res = await FoodSchema.insertMany([...foodData]);

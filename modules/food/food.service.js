@@ -25,7 +25,7 @@ class FoodService {
 
             return { statusCode: 200, result: response };
         } catch (err) {
-            throw new Error(err.message)
+            throw new Error(err.message);
         }
     }
 
@@ -49,9 +49,7 @@ class FoodService {
 
         if (!food || !food._id) return { statusCode: 404, message: `ID: ${id} NOT_FOUND` }
 
-        const res = await FoodRepo.deleteFood(id)
-
-        console.log(res)
+        await FoodRepo.deleteFood(id);
 
         return { statusCode: 200, message: `SUCCESSFULLY DELETED ${food.name}, ID: ${id}` }
     }

@@ -10,11 +10,11 @@ const userSchema = new Schema(
         password: { type: String, required: true },
         img: String,
         phone: String,
+        id_admin: { type: Boolean, default: false },
         media: {
             name: String,
             link: String,
-        },
-        id_admin: Boolean
+        }
     },
     {
         timestamps: true,
