@@ -1,7 +1,23 @@
 const FoodRepo = require("./food.repo");
 
 class FoodService {
-    static getAllFood = () => FoodRepo.getAllFood();
+    static getAllPageFood = async ({ page, items_per_page }) => {
+        try {
+            const totalItems = await FoodRepo.getTotalDocs();
+
+            const items = await FoodRepo.getPageFood({ page, items_per_page })
+
+            const data = {
+                items,
+                currentPage: page,
+                totalPages: Math.ceil(totalItems / items_per_page),
+            }
+
+            return data
+        } catch (error) {
+            throw error
+        }
+    };
 
     static getOneFood = (_id) => FoodRepo.getOneFood(_id);
 

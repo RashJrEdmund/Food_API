@@ -2,7 +2,12 @@ const { FoodSchema } = require("../../schemas");
 // const { foodData } = require("../../data")
 
 class FoodRepo {
-    static getAllFood = () => FoodSchema.find({});
+    static getTotalDocs = () => FoodSchema.countDocuments();
+
+    static getPageFood = ({ page, items_per_page }) =>
+        FoodSchema.find()
+            .skip((page - 1) * items_per_page)
+            .limit(items_per_page);
 
     static getOneFood = (_id) => FoodSchema.findById(_id);
 

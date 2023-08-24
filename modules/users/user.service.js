@@ -18,8 +18,8 @@ class UserService {
                 password: reqBody.password,
                 is_admin: reqBody.is_admin,
                 media: {
-                    name: reqBody.media.name,
-                    link: reqBody.media.link,
+                    name: reqBody.media.name ?? null,
+                    link: reqBody.media.link ?? null,
                 }
             }
 
@@ -56,4 +56,4 @@ class UserService {
     }
 }
 
-module.exports = UserService
+module.exports = UserService;

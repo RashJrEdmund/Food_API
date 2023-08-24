@@ -24,4 +24,10 @@ app.use("/api/auth", auth_route);
 app.use("/api/food_data", food_data_route);
 app.use("/api/users", users_route);
 
-app.listen(PORT, () => console.log(`listenning on port ${PORT}`));
+app.listen(PORT, () => console.log(
+`server running on http://localhost:${PORT}/ \n
+visit :
+http://localhost:${PORT}/api/
+
+for api calls`
+));
