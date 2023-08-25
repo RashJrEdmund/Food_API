@@ -126,6 +126,23 @@
         "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
     },
     {
+        "name": "Ettie's Peanut & Green Stew",
+        "img": [
+            "https://production-media.gousto.co.uk/cms/mood-image/3182_Cameroonian-style-Squash-Peanut--Greens-Stew-1616-1602061428116.jpg"
+        ],
+        "imgIndx": 0,
+        "recipe": [
+            "step 1",
+            "step 2",
+            "step 3",
+            "ect"
+        ],
+        "description": "Classy and delicious",
+        "fav": false,
+        "_id": "f81d1b35-5382-4570-820a-e7bc0418a9b0-test2",
+        "author_id": "1eb06cd3-2ebd-4bf1-b162-e58d929ea720"
+    },
+    {
         "name": "Fufu x Njama Njama",
         "img": [
             "https://www.africanbites.com/wp-content/uploads/2014/07/IMG_3488.jpg",
@@ -163,6 +180,26 @@
         "fav": false,
         "_id": "4337b020-3496-4a6c-ae9d-0b764a25753a",
         "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
+    },
+    {
+        "name": "Ettie's Fried plantain",
+        "img": [
+            "https://seeafricatoday.com/wp-content/uploads/2022/10/Sweet-fried-plantains.jpg",
+            "https://static01.nyt.com/images/2019/06/26/dining/24Nigerianrex6/24Nigerianrex6-articleLarge.jpg",
+            "https://www.themidwestkitchenblog.com/wp-content/uploads/2022/12/jollof-rice-and-plantains.jpg",
+            "https://foodienotachef.com/wp-content/uploads/2021/02/ovengrilledtilapifried-1.png"
+        ],
+        "imgIndx": 0,
+        "recipe": [
+            "step 1",
+            "step 2",
+            "step 3",
+            "ect"
+        ],
+        "description": "sweet and tasty",
+        "fav": false,
+        "_id": "f81d1b35-5382-4570-820a-e7bc0418a9b0-test-2",
+        "author_id": "1eb06cd3-2ebd-4bf1-b162-e58d929ea720"
     },
     {
         "name": "Poulet DG",
@@ -222,7 +259,26 @@
         "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
     },
     {
-        "name": "Jollof Spaghetti",
+        "name": "Ettie's Jollof Rice",
+        "img": [
+            "https://i0.wp.com/afrovitalityeats.com/wp-content/uploads/2017/07/Baked-Jollof-Rice.jpg?ssl=1",
+            "https://flawlessfood.co.uk/wp-content/uploads/2023/01/Jollof-Rice-04-500x375.jpg",
+            "https://i1.wp.com/www.laquein.com/wp-content/uploads/2019/10/FA6C9F88-8BCC-4140-ABB1-CA339A9C1599.jpeg?fit=1024%2C993&ssl=1"
+        ],
+        "imgIndx": 0,
+        "recipe": [
+            "step 1",
+            "step 2",
+            "step 3",
+            "ect"
+        ],
+        "description": "What's a food list without this delicacy. This is probably the top most heard of African food",
+        "fav": false,
+        "_id": "f81d1b35-5382-4570-820a-e7bc0418a9b0-test1",
+        "author_id": "1eb06cd3-2ebd-4bf1-b162-e58d929ea720"
+    },
+    {
+        "name": "Ettie's Jollof Spaghetti",
         "img": [
             "https://i0.wp.com/www.yummymedley.com/wp-content/uploads/2017/05/jollof-spaghetti-overhead.jpg?resize=750%2C1125&ssl=1",
             "https://www.yummymedley.com/wp-content/uploads/2017/05/jollof-spaghetti.jpg",
@@ -238,7 +294,7 @@
         "description": "Classy and delicious",
         "fav": false,
         "_id": "29565a61-085d-4c8c-a9e3-c400d4428e4f",
-        "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
+        "author_id": "1eb06cd3-2ebd-4bf1-b162-e58ck29zb720"
     },
     {
         "name": "Potatoe: Hot pot",
@@ -299,7 +355,7 @@
         "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
     },
     {
-        "name": "Dougnuts",
+        "name": "Ettie's Dougnuts",
         "img": [
             "https://inbloombakery.com/wp-content/uploads/2022/09/Cinnamon-Donuts-15.jpg",
             "https://inbloombakery.com/wp-content/uploads/2022/09/Cinnamon-Donuts-13.jpg",
@@ -316,6 +372,6 @@
         "description": "Bad dope, and Attractive",
         "fav": false,
         "_id": "c2262470-1cc1-4f84-930c-3e1b1727f0d6",
-        "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
+        "author_id": "1eb06cd3-2ebd-4bf1-b162-e58d929ea720"
     }
 ]

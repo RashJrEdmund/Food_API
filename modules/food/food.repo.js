@@ -1,5 +1,5 @@
 const { FoodSchema } = require("../../schemas");
-// const { foodData } = require("../../data")
+// const { foodData } = require("../../data");
 
 class FoodRepo {
     static getTotalDocs = () => FoodSchema.countDocuments();
