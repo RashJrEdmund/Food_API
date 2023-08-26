@@ -28,6 +28,5 @@ app.listen(PORT, () => console.log(
 `server running on http://localhost:${PORT}/ \n
 visit :
 http://localhost:${PORT}/api/
-
 for api calls`
 ));
