@@ -1,10 +1,11 @@
 [
     {
         "_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-        "name": "Rash",
+        "username": "Rash",
         "email": "rash@gmail.com",
         "img": "https://food-app/author/rash.png",
         "phone": "+237670118208",
+        "password": "abcd_1234",
         "media": {
             "name": "Twitter",
             "link": "https://twitter/orashus"
@@ -13,10 +14,11 @@
     },
     {
         "_id": "1eb06cd3-2ebd-4bf1-b162-e58d929ea720",
-        "name": "Ettie",
+        "username": "Ettie",
         "email": "ettie@gmail.com",
         "img": "https://food-app/author/ettie.png",
         "phone": "+237670118208",
+        "password": "abcd_1234",
         "media": {
             "name": "Twitter",
             "link": "https://twitter/orock"
@@ -25,10 +27,11 @@
     },
     {
         "_id": "9a19a143-6fd8-492b-8630-d1d7a848aaba",
-        "name": "Claude",
+        "username": "Claude",
         "email": "claude@gmail.com",
         "img": "https://food-app/author/claude.png",
         "phone": "+237670118208",
+        "password": "abcd_1234",
         "media": {
             "name": "Twitter",
             "link": "https://twitter/jaro"

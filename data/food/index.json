@@ -17,15 +17,7 @@
         "description": "a tasty rice-beans combo like no other",
         "fav": false,
         "_id": "656e25b3-8b43-4994-ac12-719a50822ce9",
-        "author": {
-            "id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-            "username": "Rash",
-            "img": "https://food-app/author/rash.png",
-            "media": {
-                "name": "Twitter",
-                "link": "https://twitter/orashus"
-            }
-        }
+        "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
     },
     {
         "name": "Khahti Khahti",
@@ -46,15 +38,7 @@
         "description": "Bad dope",
         "fav": false,
         "_id": "f626855f-8528-458c-bed9-ce625cd7d217",
-        "author": {
-            "id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-            "username": "Rash",
-            "img": "https://food-app/author/rash.png",
-            "media": {
-                "name": "Twitter",
-                "link": "https://twitter/orashus"
-            }
-        }
+        "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
     },
     {
         "name": "Ndole",
@@ -71,15 +55,7 @@
         "description": "it's good",
         "fav": false,
         "_id": "301bd56e-f7af-4036-bcf9-10545735c787",
-        "author": {
-            "id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-            "username": "Rash",
-            "img": "https://food-app/author/rash.png",
-            "media": {
-                "name": "Twitter",
-                "link": "https://twitter/orashus"
-            }
-        }
+        "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
     },
     {
         "name": "water Fufu & Erru",
@@ -97,15 +73,7 @@
         "description": "Only life and joy",
         "fav": false,
         "_id": "96fd9f57-f198-40c3-b075-29e35adab758",
-        "author": {
-            "id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-            "username": "Rash",
-            "img": "https://food-app/author/rash.png",
-            "media": {
-                "name": "Twitter",
-                "link": "https://twitter/orashus"
-            }
-        }
+        "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
     },
     {
         "name": "Koki",
@@ -122,15 +90,7 @@
         "description": "Koki is feh divine",
         "fav": false,
         "_id": "09764699-c268-4e6b-9cab-f146a4393b8c",
-        "author": {
-            "id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-            "username": "Rash",
-            "img": "https://food-app/author/rash.png",
-            "media": {
-                "name": "Twitter",
-                "link": "https://twitter/orashus"
-            }
-        }
+        "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
     },
     {
         "name": "Achu",
@@ -146,15 +106,7 @@
         "description": "Its good",
         "fav": false,
         "_id": "a381495e-db6e-4969-8cc9-b783faa8c530",
-        "author": {
-            "id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-            "username": "Rash",
-            "img": "https://food-app/author/rash.png",
-            "media": {
-                "name": "Twitter",
-                "link": "https://twitter/orashus"
-            }
-        }
+        "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
     },
     {
         "name": "Peanut & Green Stew",
@@ -171,15 +123,24 @@
         "description": "Classy and delicious",
         "fav": false,
         "_id": "f81d1b35-5382-4570-820a-e7bc0418a9b0",
-        "author": {
-            "id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-            "username": "Rash",
-            "img": "https://food-app/author/rash.png",
-            "media": {
-                "name": "Twitter",
-                "link": "https://twitter/orashus"
-            }
-        }
+        "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
+    },
+    {
+        "name": "Ettie's Peanut & Green Stew",
+        "img": [
+            "https://production-media.gousto.co.uk/cms/mood-image/3182_Cameroonian-style-Squash-Peanut--Greens-Stew-1616-1602061428116.jpg"
+        ],
+        "imgIndx": 0,
+        "recipe": [
+            "step 1",
+            "step 2",
+            "step 3",
+            "ect"
+        ],
+        "description": "Classy and delicious",
+        "fav": false,
+        "_id": "f81d1b35-5382-4570-820a-e7bc0418a9b0-test2",
+        "author_id": "1eb06cd3-2ebd-4bf1-b162-e58d929ea720"
     },
     {
         "name": "Fufu x Njama Njama",
@@ -198,15 +159,7 @@
         "description": "There Is Joy",
         "fav": false,
         "_id": "2b7a8397-504f-472c-846c-3d07fd5960e1",
-        "author": {
-            "id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-            "username": "Rash",
-            "img": "https://food-app/author/rash.png",
-            "media": {
-                "name": "Twitter",
-                "link": "https://twitter/orashus"
-            }
-        }
+        "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
     },
     {
         "name": "Fried plantain",
@@ -226,15 +179,27 @@
         "description": "sweet and tasty",
         "fav": false,
         "_id": "4337b020-3496-4a6c-ae9d-0b764a25753a",
-        "author": {
-            "id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-            "username": "Rash",
-            "img": "https://food-app/author/rash.png",
-            "media": {
-                "name": "Twitter",
-                "link": "https://twitter/orashus"
-            }
-        }
+        "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
+    },
+    {
+        "name": "Ettie's Fried plantain",
+        "img": [
+            "https://seeafricatoday.com/wp-content/uploads/2022/10/Sweet-fried-plantains.jpg",
+            "https://static01.nyt.com/images/2019/06/26/dining/24Nigerianrex6/24Nigerianrex6-articleLarge.jpg",
+            "https://www.themidwestkitchenblog.com/wp-content/uploads/2022/12/jollof-rice-and-plantains.jpg",
+            "https://foodienotachef.com/wp-content/uploads/2021/02/ovengrilledtilapifried-1.png"
+        ],
+        "imgIndx": 0,
+        "recipe": [
+            "step 1",
+            "step 2",
+            "step 3",
+            "ect"
+        ],
+        "description": "sweet and tasty",
+        "fav": false,
+        "_id": "f81d1b35-5382-4570-820a-e7bc0418a9b0-test-2",
+        "author_id": "1eb06cd3-2ebd-4bf1-b162-e58d929ea720"
     },
     {
         "name": "Poulet DG",
@@ -253,15 +218,7 @@
         "description": "sweet and tasty, everything you need",
         "fav": false,
         "_id": "1f4064ea-d655-48f8-8f22-a815ab77991c",
-        "author": {
-            "id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-            "username": "Rash",
-            "img": "https://food-app/author/rash.png",
-            "media": {
-                "name": "Twitter",
-                "link": "https://twitter/orashus"
-            }
-        }
+        "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
     },
     {
         "name": "Vegetable salad",
@@ -280,15 +237,7 @@
         "description": "a beautiful and very healthy mix of fruits in a well thought out way",
         "fav": false,
         "_id": "ee296c68-ef42-4ae8-8c37-750cc67315f1",
-        "author": {
-            "id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-            "username": "Rash",
-            "img": "https://food-app/author/rash.png",
-            "media": {
-                "name": "Twitter",
-                "link": "https://twitter/orashus"
-            }
-        }
+        "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
     },
     {
         "name": "Jollof Rice",
@@ -307,18 +256,29 @@
         "description": "What's a food list without this delicacy. This is probably the top most heard of African food",
         "fav": false,
         "_id": "7d80ecb0-9013-43c6-baf9-83466a7e4d5a",
-        "author": {
-            "id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-            "username": "Rash",
-            "img": "https://food-app/author/rash.png",
-            "media": {
-                "name": "Twitter",
-                "link": "https://twitter/orashus"
-            }
-        }
+        "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
     },
     {
-        "name": "Jollof Spaghetti",
+        "name": "Ettie's Jollof Rice",
+        "img": [
+            "https://i0.wp.com/afrovitalityeats.com/wp-content/uploads/2017/07/Baked-Jollof-Rice.jpg?ssl=1",
+            "https://flawlessfood.co.uk/wp-content/uploads/2023/01/Jollof-Rice-04-500x375.jpg",
+            "https://i1.wp.com/www.laquein.com/wp-content/uploads/2019/10/FA6C9F88-8BCC-4140-ABB1-CA339A9C1599.jpeg?fit=1024%2C993&ssl=1"
+        ],
+        "imgIndx": 0,
+        "recipe": [
+            "step 1",
+            "step 2",
+            "step 3",
+            "ect"
+        ],
+        "description": "What's a food list without this delicacy. This is probably the top most heard of African food",
+        "fav": false,
+        "_id": "f81d1b35-5382-4570-820a-e7bc0418a9b0-test1",
+        "author_id": "1eb06cd3-2ebd-4bf1-b162-e58d929ea720"
+    },
+    {
+        "name": "Ettie's Jollof Spaghetti",
         "img": [
             "https://i0.wp.com/www.yummymedley.com/wp-content/uploads/2017/05/jollof-spaghetti-overhead.jpg?resize=750%2C1125&ssl=1",
             "https://www.yummymedley.com/wp-content/uploads/2017/05/jollof-spaghetti.jpg",
@@ -334,15 +294,7 @@
         "description": "Classy and delicious",
         "fav": false,
         "_id": "29565a61-085d-4c8c-a9e3-c400d4428e4f",
-        "author": {
-            "id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-            "username": "Rash",
-            "img": "https://food-app/author/rash.png",
-            "media": {
-                "name": "Twitter",
-                "link": "https://twitter/orashus"
-            }
-        }
+        "author_id": "1eb06cd3-2ebd-4bf1-b162-e58ck29zb720"
     },
     {
         "name": "Potatoe: Hot pot",
@@ -362,15 +314,7 @@
         "description": "Classy and delicious",
         "fav": false,
         "_id": "effe8cdc-d41a-4b4a-9f16-7a643a6c5d0b",
-        "author": {
-            "id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-            "username": "Rash",
-            "img": "https://food-app/author/rash.png",
-            "media": {
-                "name": "Twitter",
-                "link": "https://twitter/orashus"
-            }
-        }
+        "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
     },
     {
         "name": "Corn x Plum",
@@ -389,15 +333,7 @@
         "description": "you understand??¿¿ 😂",
         "fav": false,
         "_id": "48da8860-41e8-4edf-bfd7-2a4199ea4484",
-        "author": {
-            "id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-            "username": "Rash",
-            "img": "https://food-app/author/rash.png",
-            "media": {
-                "name": "Twitter",
-                "link": "https://twitter/orashus"
-            }
-        }
+        "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
     },
     {
         "name": "Soya",
@@ -416,18 +352,10 @@
         "description": "spicy and sliced roasted beef, sliced and bundled together small fine sticks, or metal",
         "fav": false,
         "_id": "3fe961d8-c302-4116-aa10-311b4a06c5b7",
-        "author": {
-            "id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-            "username": "Rash",
-            "img": "https://food-app/author/rash.png",
-            "media": {
-                "name": "Twitter",
-                "link": "https://twitter/orashus"
-            }
-        }
+        "author_id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd"
     },
     {
-        "name": "Dougnuts",
+        "name": "Ettie's Dougnuts",
         "img": [
             "https://inbloombakery.com/wp-content/uploads/2022/09/Cinnamon-Donuts-15.jpg",
             "https://inbloombakery.com/wp-content/uploads/2022/09/Cinnamon-Donuts-13.jpg",
@@ -444,14 +372,6 @@
         "description": "Bad dope, and Attractive",
         "fav": false,
         "_id": "c2262470-1cc1-4f84-930c-3e1b1727f0d6",
-        "author": {
-            "id": "d240d395-d5f1-4fb8-9ae2-c630b178d6cd",
-            "username": "Rash",
-            "img": "https://food-app/author/rash.png",
-            "media": {
-                "name": "Twitter",
-                "link": "https://twitter/orashus"
-            }
-        }
+        "author_id": "1eb06cd3-2ebd-4bf1-b162-e58d929ea720"
     }
 ]
