@@ -10,12 +10,6 @@ const { PORT } = require("./services/constants");
 app.use(express.json()) // used like bodyparser.json() from "body-parser". it ensures the req.body data is not lost
 app.use(express.urlencoded());
 
-// app.use((_, res, next) => {
-//     res.setHeader("Access-Control-Allow-Origin", "*");
-//     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PATCH, DELETE');
-//     next();
-// }); // you can use this method too in place of cors;
-
 app.use(cors({
     origin: "*",
     methods: ["GET", "POST", "PATCH", "DELETE"],
@@ -33,8 +27,8 @@ app.use("/api/food_data", food_data_route);
 app.use("/api/users", users_route);
 
 app.listen(PORT, () => console.log(
-    `server running on http://localhost:${PORT}/ \n
+`server running on http://localhost:${PORT}/ \n
 visit :
 http://localhost:${PORT}/api/
-for api calls`
+for api calls \n`
 ));
