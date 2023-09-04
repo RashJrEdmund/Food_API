@@ -9,8 +9,10 @@ const { PORT } = require("./services/constants");
 // major middle wares
 app.use(express.json()) // used like bodyparser.json() from "body-parser". it ensures the req.body data is not lost
 app.use(express.urlencoded());
+
 app.use(cors({
-    origin: "*"
+    origin: "*",
+    methods: ["GET", "POST", "PATCH", "DELETE"],
 }))
 
 app.use(express.static(__dirname + "/views/"))
@@ -28,5 +30,5 @@ app.listen(PORT, () => console.log(
 `server running on http://localhost:${PORT}/ \n
 visit :
 http://localhost:${PORT}/api/
-for api calls`
+for api calls \n`
 ));
